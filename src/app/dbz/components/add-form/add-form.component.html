@@ -1,0 +1,21 @@
+<h4>Agregar Trabajadores</h4>
+
+<form class="row" (submit)="emitCharacter()">
+
+  <input class="form-control mb-2"
+      type="text"
+      [(ngModel)] = "character.name"
+      name="name"
+      placeholder="Nombre del Pesonaje">
+
+  <input class="form-control mb-2"
+      type="number"
+      [(ngModel)] = "character.sueldo"
+      name="sueldo"
+      placeholder="Ingrese el sueldo">
+  <button type="submit" class="btn btn-primary">
+    Agregar
+  </button>
+
+  <!-- <pre>{{ character | json }}</pre> -->
+</form>

@@ -1,0 +1,15 @@
+<h1>Auto Partes Lalo, (APL)</h1>
+<hr>
+
+<div class="row">
+  <div class="row">
+    <app-dbz-list [characterList]="getCharacters"
+      (onDeleteListByIdAntena)="onDeleteCharacter($event)">
+      <!-- onDeleteCharacterFather($event) -->
+    </app-dbz-list>
+  </div>
+
+  <div class="col">
+    <app-add-dbz-form (onNewCharacterAntena)="onNewCharacter($event)"></app-add-dbz-form>
+  </div>
+</div>
